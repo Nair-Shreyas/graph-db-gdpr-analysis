@@ -1,5 +1,7 @@
 # Graph Database Design — Digital Newspaper Recommendation Engine
 
+![Project Overview](docs/images/0_project_overview.png)
+
 A Neo4j graph database modeling a digital newspaper's readers, articles, authors, topics, and tags — built to power article recommendations — plus an analysis of GDPR compliance considerations for maintaining that kind of graph.
 
 ![Graph model](graph-model.png)
