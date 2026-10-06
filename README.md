@@ -1,4 +1,4 @@
-# Graph Database Design — Digital Newspaper Recommendation Engine
+# Graph Database Design: Digital Newspaper Recommendation Engine
 
 ![Project Overview](docs/images/0_project_overview.png)
 
@@ -8,13 +8,13 @@
   <img src="https://img.shields.io/badge/Focus-GDPR_compliance-c9440c?style=flat-square" alt="Focus: GDPR compliance"/>
 </p>
 
-A Neo4j graph database modeling a digital newspaper's readers, articles, authors, topics, and tags — built to power article recommendations — plus an analysis of GDPR compliance considerations for maintaining that kind of graph.
+A Neo4j graph database modeling a digital newspaper's readers, articles, authors, topics, and tags, built to power article recommendations, plus an analysis of GDPR compliance considerations for maintaining that kind of graph.
 
 ![Graph model](graph-model.png)
 
 ## Why a graph database
 
-Recommendation-style problems (find related content, similar users, trending topics) involve traversing many-to-many relationships — reader→article→topic→other readers, and so on. A relational database would need repeated joins across multiple tables for these traversals; a graph database expresses them natively as relationship traversals, which is both faster and easier to reason about.
+Recommendation-style problems (find related content, similar users, trending topics) involve traversing many-to-many relationships: reader→article→topic→other readers, and so on. A relational database would need repeated joins across multiple tables for these traversals; a graph database expresses them natively as relationship traversals, which is both faster and easier to reason about.
 
 ## Data model
 - **Reader** → `READ` → **Article**
@@ -32,7 +32,7 @@ Six use cases built on this model:
 6. Classify readers as "Power User" vs. "Light User" by engagement
 
 ## GDPR considerations
-The accompanying analysis covers the compliance implications of storing reader behavior (reading history, inferred interests) in a graph structure — right to erasure in a highly-interconnected data model, data minimization, and purpose limitation for recommendation profiling.
+The accompanying analysis covers the compliance implications of storing reader behavior (reading history, inferred interests) in a graph structure: right to erasure in a highly-interconnected data model, data minimization, and purpose limitation for recommendation profiling.
 
 ## Tech
 Neo4j, Cypher

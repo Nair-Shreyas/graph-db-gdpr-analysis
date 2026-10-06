@@ -24,7 +24,7 @@ RETURN
 // Step 1: Find all tags associated with the articles a reader has read.
 // Step 2: Identify other readers who have read articles with those same tags (i.e., similar interests).
 // Step 3: From those similar readers, collect the topics of the articles they have read.
-// Step 4: Count how frequently each topic appears — these are the trending topics.
+// Step 4: Count how frequently each topic appears. These are the trending topics.
 // Step 5: Exclude self-matches to avoid comparing a reader with themselves.
 MATCH (r:Reader)-[:READ]->(:Article)-[:HAS_TAG]->(tag:Tag)
 MATCH (r1:Reader)-[:READ]->(a:Article)-[:HAS_TAG]->(tag)
