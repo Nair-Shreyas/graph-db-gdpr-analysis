@@ -2,6 +2,12 @@
 
 ![Project Overview](docs/images/0_project_overview.png)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Database-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Database: Neo4j"/>
+  <img src="https://img.shields.io/badge/Query_language-Cypher-018BFF?style=flat-square" alt="Query language: Cypher"/>
+  <img src="https://img.shields.io/badge/Focus-GDPR_compliance-c9440c?style=flat-square" alt="Focus: GDPR compliance"/>
+</p>
+
 A Neo4j graph database modeling a digital newspaper's readers, articles, authors, topics, and tags — built to power article recommendations — plus an analysis of GDPR compliance considerations for maintaining that kind of graph.
 
 ![Graph model](graph-model.png)
